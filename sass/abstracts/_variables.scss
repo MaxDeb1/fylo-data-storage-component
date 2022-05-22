@@ -1,0 +1,19 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+// Font Variables
+$raleway: 'Raleway', sans-serif;
+
+///Colors
+$Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+$Pale_Blue: hsl(243, 100%, 93%);
+$Grayish_Blue: hsl(229, 7%, 55%);
+$Dark_Blue: hsl(228, 56%, 26%);
+$Very_Dark_Blue: hsl(229, 57%, 11%);
+
+
+/// Responsive Font-Size
+html {
+  --res: calc(0.01 * 10vmin);
+}
+//How to use it : font-size: calc(64 * vart(--res));

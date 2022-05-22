@@ -1,0 +1,170 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/bg-mobile.png) no-repeat;
+  background-size: cover;
+  padding: 0 6.66%;
+  @extend %flex-center;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+
+.top {
+  height: 200px;
+  width: 100%;
+  background-color: $Dark_Blue;
+  padding: 40px;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.icon_container {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $Very_Dark_Blue;
+  border-radius: 10px;
+}
+
+.bottom {
+  height: 160px;
+  width: 100%;
+  background-color: $Dark_Blue;
+  padding: 35px;
+  border-radius: 10px;
+  font-family: $raleway;
+  color: $Pale_Blue;
+  text-align: center;
+
+  .storage_info {
+    margin-bottom: 0.9rem;
+  }
+}
+
+.capacity {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+.volume {
+  height: 20px;
+  width: 100%;
+  background-color: $Very_Dark_Blue;
+  border-radius: 45px;
+  padding: 2px;
+
+  .progress-bar {
+    height: 100%;
+    width: 76%;
+    padding: 3px;
+    background: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .cursor {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(1px, -1px);
+  }
+}
+
+.remaining {
+  height: 72px;
+  width: auto;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid $Very_Dark_Blue;
+  border-radius: 10px;
+
+  span {
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  p {
+    margin-left: 0.5rem;
+    color: $Grayish_Blue;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+
+.attribution {
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  font-size: 11px; 
+  text-align: center;
+  color: white;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-color: $Very_Dark_Blue;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: 0 18.055%;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    align-items: end;
+  }
+
+  .bottom {
+    text-align: start;
+  }
+
+  .remaining {
+    width: 39.13%;
+    margin: 0;
+    border-radius: 10px 10px 0 10px;
+    transform: translate(155%, -260%);
+  }
+
+  .remaining::after {
+    content: '';
+    display : inline-block;
+    position: absolute;
+    height : 0;
+    width : 0;
+    right: 0;
+    bottom: -19px;
+    border-top : 22px solid white;
+    border-left : 22px solid transparent;
+  
+    }
+  }
