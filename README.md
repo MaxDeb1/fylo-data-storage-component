@@ -1,5 +1,7 @@
 # Frontend Mentor - Fylo data storage component
 
+[Live site](https://maxdeb1.github.io/fylo-data-storage-component/)
+
 ![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
